@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<AdultContent>false</AdultContent>
+	<Language>el-gr</Language>
+	<ShortName>geometrisis google search</ShortName>
+	<LongName>geometrisis google search</LongName>
+	<Description>geometrisis google search</Description>
+	<Tags>τεχνικό, γραφείο, μελετών, geometrisis, αγρονόμος, τοπογράφος, μηχανικός</Tags>
+	<Url type="application/rss+xml" template="http://www.google.com/search?q=site:geometrisis.eu {searchTerms}"/>
+	<Url type="text/html" template="http://www.google.com/search?q=site:geometrisis.eu {searchTerms}"/>
+	<Image height="16" width="16" type="image/png">http://geometrisis.eu/favicon.png</Image>
+	<Query role="example" searchTerms="tweaks" />
+	<Developer>Giorgos</Developer>
+	<Attribution>Search data Copyright 2018</Attribution>
+	<SyndicationRight>open</SyndicationRight>
+	<Contact>geometrisis@gmx.com</Contact>
+</OpenSearchDescription>
