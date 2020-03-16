@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="imagetoolbar" content="no" />
+    <script type="text/javascript" language="javaScript" charset="UTF-8" src="http://gis.ktimanet.gr/wms/webapiwebservice/ImageService.aspx?KEY=AB4436233HF45HGHDFGHF54FGH&VERSION=1.8&File=KTWEBAPI.js"></script>
+    <title></title>
+    <script type="text/javascript" language="javascript">
+        var MyMap = null;
+        function documentonload() {
+            MyMap = new KT.KTWebMap.map('Canvas');
+            var MyLayer = new KT.KTWebMap.layer('ΧΑΡΤΕΣ 45', 'KT', '1');
+            MyMap.AddLayer(MyLayer);
+            MyMap.ZoomToRectangle(90000, 3800000, 1000000, 4800000);
+            var MyLayer1 = new KT.KTWebMap.layer('ΟΠΕΚΕΠΕ 2012', 'KT', '13');
+            MyMap.AddLayer(MyLayer1);
+            var MyLayer2 = new KT.KTWebMap.layer('ΔΙΑΝΟΜΕΣ', 'KT', '26');
+            MyMap.AddLayer(MyLayer2);
+            var MyLayer3 = new KT.KTWebMap.layer('ΚΑΕΚ', 'KT', '12');
+            MyMap.AddLayer(MyLayer3);
+	    MyMap.SetToolbarItemVisibility('Command3D', true);
+	    MyMap.HideNavigationFrame();
+	    MyMap.ChangeComponentDimensions('TOC', 160, 200);
+        }
+
+    </script>
+</head>
+<body onload="documentonload();">
+    <table border="1px">
+        <tr>
+            <td colspan="2">
+                <div style="width:700px">
+                    <label style="font-family: verdana; font-size: 22px; font-weight: bold">ΠΛΗΡΟΦΟΡΙΕΣ</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="Canvas" style="border: thin solid #008080;width:1200px;height:800px">
+                </div>
+            </td>
+            <td>
+                <img src="Legend.png" />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
