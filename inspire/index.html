@@ -1,0 +1,338 @@
+<WMS_Capabilities xmlns="http://www.opengis.net/wms" xmlns:esri_wms="http://www.esri.com/wms" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_vs="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.3.0" xsi:schemaLocation="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0 https://gis.ktimanet.gr/inspire/rest/directories/arcgisforinspire/schema/networkservices/inspire_vs/1.0/inspire-wms-extension.xsd">
+<Service>
+<Name>WMS</Name>
+<Title>INSPIRE View Service</Title>
+<Abstract>This service provides INSPIRE Data.</Abstract>
+<KeywordList>
+<Keyword>WMS</Keyword>
+<Keyword>INSPIRE</Keyword>
+<Keyword>ViewService</Keyword>
+<Keyword vocabulary="ISO">infoMapAccessService</Keyword>
+<Keyword vocabulary="GEMET - INSPIRE themes">Cadastral parcels</Keyword>
+</KeywordList>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/service?" xlink:type="simple"/>
+<ContactInformation>
+<ContactPersonPrimary>
+<ContactPerson>Directorate of Geospatial Information / Department of Geoinformation</ContactPerson>
+<ContactOrganization>Hellenic Cadastre, Directorate of Geospatial Information / Department of Geoinformation</ContactOrganization>
+</ContactPersonPrimary>
+<ContactPosition>pointOfContact</ContactPosition>
+<ContactAddress>
+<AddressType>postal</AddressType>
+<Address/>
+<City/>
+<StateOrProvince/>
+<PostCode/>
+<Country>Greece</Country>
+</ContactAddress>
+<ContactVoiceTelephone>30 210 6505 600</ContactVoiceTelephone>
+<ContactFacsimileTelephone>30 210 6537 723</ContactFacsimileTelephone>
+<ContactElectronicMailAddress>inspire@ktimatologio.gr</ContactElectronicMailAddress>
+</ContactInformation>
+<Fees>no conditions apply</Fees>
+<AccessConstraints>None</AccessConstraints>
+<MaxWidth>4096</MaxWidth>
+<MaxHeight>4096</MaxHeight>
+</Service>
+<Capability>
+<Request>
+<GetCapabilities>
+<Format>application/vnd.ogc.wms_xml</Format>
+<Format>text/xml</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/service?" xlink:type="simple"/>
+</Get>
+</HTTP>
+</DCPType>
+</GetCapabilities>
+<GetMap>
+<Format>image/bmp</Format>
+<Format>image/jpeg</Format>
+<Format>image/tiff</Format>
+<Format>image/png</Format>
+<Format>image/png8</Format>
+<Format>image/png24</Format>
+<Format>image/png32</Format>
+<Format>image/gif</Format>
+<Format>image/svg+xml</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?" xlink:type="simple"/>
+</Get>
+</HTTP>
+</DCPType>
+</GetMap>
+<GetFeatureInfo>
+<Format>text/xml</Format>
+<Format>text/html</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?" xlink:type="simple"/>
+</Get>
+</HTTP>
+</DCPType>
+</GetFeatureInfo>
+<esri_wms:GetStyles>
+<Format>application/vnd.ogc.sld+xml</Format>
+<DCPType>
+<HTTP>
+<Get>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?" xlink:type="simple"/>
+</Get>
+</HTTP>
+</DCPType>
+</esri_wms:GetStyles>
+</Request>
+<Exception>
+<Format>application/vnd.ogc.se_xml</Format>
+<Format>text/xml</Format>
+</Exception>
+<ExtendedCapabilities xmlns="http://inspire.ec.europa.eu/schemas/inspire_vs/1.0">
+<ResourceLocator xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<URL>https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/service</URL>
+<MediaType>application/vnd.ogc.wms_xml</MediaType>
+</ResourceLocator>
+<ResourceType xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">service</ResourceType>
+<TemporalReference xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<DateOfPublication>2020-01-05</DateOfPublication>
+</TemporalReference>
+<Conformity xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<Specification xsi:type="inspire_common:citationInspireInteroperabilityRegulation_eng">
+<Title>COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services</Title>
+<DateOfPublication>2010-12-08</DateOfPublication>
+<URI>OJ:L:2010:323:0011:0102:EN:PDF</URI>
+<ResourceLocator>
+<URL>http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:323:0011:0102:EN:PDF</URL>
+<MediaType>application/pdf</MediaType>
+</ResourceLocator>
+</Specification>
+<Degree>conformant</Degree>
+</Conformity>
+<MetadataPointOfContact xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<OrganisationName>Hellenic Cadastre</OrganisationName>
+<EmailAddress>inspire@ktimatologio.gr</EmailAddress>
+</MetadataPointOfContact>
+<MetadataDate xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">2020-01-05</MetadataDate>
+<SpatialDataServiceType xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">view</SpatialDataServiceType>
+<MandatoryKeyword xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<KeywordValue>infoMapAccessService</KeywordValue>
+</MandatoryKeyword>
+<Keyword xmlns="http://inspire.ec.europa.eu/schemas/common/1.0" xsi:type="inspire_common:inspireTheme_eng">
+<OriginatingControlledVocabulary>
+<Title>GEMET - INSPIRE themes</Title>
+<DateOfPublication>2008-06-01</DateOfPublication>
+</OriginatingControlledVocabulary>
+<KeywordValue>Cadastral parcels</KeywordValue>
+</Keyword>
+<Keyword xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<KeywordValue>WMS</KeywordValue>
+</Keyword>
+<Keyword xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<KeywordValue>INSPIRE</KeywordValue>
+</Keyword>
+<Keyword xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<KeywordValue>ViewService</KeywordValue>
+</Keyword>
+<SupportedLanguages xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<DefaultLanguage>
+<Language>eng</Language>
+</DefaultLanguage>
+<SupportedLanguage>
+<Language>eng</Language>
+</SupportedLanguage>
+<SupportedLanguage>
+<Language>gre</Language>
+</SupportedLanguage>
+</SupportedLanguages>
+<ResponseLanguage xmlns="http://inspire.ec.europa.eu/schemas/common/1.0">
+<Language>eng</Language>
+</ResponseLanguage>
+</ExtendedCapabilities>
+<Layer>
+<Title>cadastralparcels</Title>
+<Abstract>Layer cadastralparcels</Abstract>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:3034</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3040</CRS>
+<CRS>EPSG:3041</CRS>
+<CRS>EPSG:3042</CRS>
+<CRS>EPSG:3043</CRS>
+<CRS>EPSG:3044</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3047</CRS>
+<CRS>EPSG:3048</CRS>
+<CRS>EPSG:3049</CRS>
+<CRS>EPSG:3050</CRS>
+<CRS>EPSG:3857</CRS>
+<CRS>EPSG:25830</CRS>
+<CRS>EPSG:25831</CRS>
+<CRS>EPSG:25832</CRS>
+<CRS>EPSG:25833</CRS>
+<CRS>EPSG:25834</CRS>
+<CRS>EPSG:25835</CRS>
+<CRS>EPSG:25836</CRS>
+<CRS>EPSG:25837</CRS>
+<CRS>EPSG:25838</CRS>
+<CRS>EPSG:102100</CRS>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>19.782912</westBoundLongitude>
+<eastBoundLongitude>27.881027</eastBoundLongitude>
+<southBoundLatitude>35.170953</southBoundLatitude>
+<northBoundLatitude>41.253801</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<BoundingBox CRS="EPSG:3034" maxx="1818428.3038972272" maxy="5611899.324552264" minx="1033626.4582782071" miny="4799891.464439919"/>
+<BoundingBox CRS="EPSG:3035" maxx="2194358.7819110793" maxy="5950714.694752146" minx="1403514.9227107256" miny="5141776.821031996"/>
+<BoundingBox CRS="EPSG:3040" maxx="4506008.523911316" maxy="5556369.702276058" minx="3427893.7321125907" miny="4500501.232421699"/>
+<BoundingBox CRS="EPSG:3041" maxx="3927217.630793218" maxy="5278663.870078473" minx="2921117.636274193" miny="4296417.023719931"/>
+<BoundingBox CRS="EPSG:3042" maxx="5054011.920250718" maxy="3354421.950402014" minx="4139343.8391593527" miny="2414257.8831085027"/>
+<BoundingBox CRS="EPSG:3043" maxx="4876828.210212206" maxy="2788626.425402894" minx="4023768.8308070675" miny="1908468.3713173214"/>
+<BoundingBox CRS="EPSG:3044" maxx="4742570.563019538" maxy="2229595.1275732024" minx="3945702.98615014" miny="1404053.146571505"/>
+<BoundingBox CRS="EPSG:3045" maxx="4647735.229935288" maxy="1676275.7733637893" minx="3902491.2553858184" miny="900764.545043522"/>
+<BoundingBox CRS="EPSG:3046" maxx="4589824.299661821" maxy="1127105.8223365932" minx="3892001.416081888" miny="389167.3978709978"/>
+<BoundingBox CRS="EPSG:3047" maxx="4592122.252217778" maxy="580228.7144834654" minx="3892001.415964156" miny="-157786.08124216646"/>
+<BoundingBox CRS="EPSG:3048" maxx="4652052.006125189" maxy="71067.21091153764" minx="3904020.21412124" miny="-707141.3070308995"/>
+<BoundingBox CRS="EPSG:3049" maxx="4749020.169873207" maxy="-432271.5383863753" minx="3949134.9566065734" miny="-1260742.9086582265"/>
+<BoundingBox CRS="EPSG:3050" maxx="4885579.934490423" maxy="-936761.1774784408" minx="4029219.7952343654" miny="-1820131.2706821165"/>
+<BoundingBox CRS="EPSG:3857" maxx="3103701.770846238" maxy="5049849.7066265885" minx="2202223.7383381613" miny="4187137.366734081"/>
+<BoundingBox CRS="EPSG:25830" maxx="3354421.950402014" maxy="5054011.920250718" minx="2414257.8831085027" miny="4139343.8391593527"/>
+<BoundingBox CRS="EPSG:25831" maxx="2788626.425402894" maxy="4876828.210212206" minx="1908468.3713173214" miny="4023768.8308070675"/>
+<BoundingBox CRS="EPSG:25832" maxx="2229595.1275732024" maxy="4742570.563019538" minx="1404053.146571505" miny="3945702.98615014"/>
+<BoundingBox CRS="EPSG:25833" maxx="1676275.7733637893" maxy="4647735.229935288" minx="900764.545043522" miny="3902491.2553858184"/>
+<BoundingBox CRS="EPSG:25834" maxx="1127105.8223365932" maxy="4589824.299661821" minx="389167.3978709978" miny="3892001.416081888"/>
+<BoundingBox CRS="EPSG:25835" maxx="580228.7144834654" maxy="4592122.252217778" minx="-157786.08124216646" miny="3892001.415964156"/>
+<BoundingBox CRS="EPSG:25836" maxx="71067.21091153764" maxy="4652052.006125189" minx="-707141.3070308995" miny="3904020.21412124"/>
+<BoundingBox CRS="EPSG:25837" maxx="-432271.5383863753" maxy="4749020.169873207" minx="-1260742.9086582265" miny="3949134.9566065734"/>
+<BoundingBox CRS="EPSG:25838" maxx="-936761.1774784408" maxy="4885579.934490423" minx="-1820131.2706821165" miny="4029219.7952343654"/>
+<BoundingBox CRS="EPSG:102100" maxx="3103701.770846238" maxy="5049849.7066265885" minx="2202223.7383381613" miny="4187137.366734081"/>
+<BoundingBox CRS="CRS:84" maxx="27.881027" maxy="41.253801" minx="19.782912" miny="35.170953"/>
+<BoundingBox CRS="EPSG:4326" maxx="41.253801" maxy="27.881027" minx="35.170953" miny="19.782912"/>
+<BoundingBox CRS="EPSG:4258" maxx="41.253801" maxy="27.881027" minx="35.170953" miny="19.782912"/>
+<Layer queryable="1">
+<Name>CP.CadastralParcel</Name>
+<Title>Cadastral Parcel</Title>
+<Abstract>Layer Cadastral Parcel</Abstract>
+<KeywordList>
+<Keyword>Cadastral Parcels</Keyword>
+<Keyword>cp:CadastralParcel</Keyword>
+</KeywordList>
+<CRS>CRS:84</CRS>
+<CRS>EPSG:4326</CRS>
+<CRS>EPSG:4258</CRS>
+<CRS>EPSG:3034</CRS>
+<CRS>EPSG:3035</CRS>
+<CRS>EPSG:3040</CRS>
+<CRS>EPSG:3041</CRS>
+<CRS>EPSG:3042</CRS>
+<CRS>EPSG:3043</CRS>
+<CRS>EPSG:3044</CRS>
+<CRS>EPSG:3045</CRS>
+<CRS>EPSG:3046</CRS>
+<CRS>EPSG:3047</CRS>
+<CRS>EPSG:3048</CRS>
+<CRS>EPSG:3049</CRS>
+<CRS>EPSG:3050</CRS>
+<CRS>EPSG:3857</CRS>
+<CRS>EPSG:25830</CRS>
+<CRS>EPSG:25831</CRS>
+<CRS>EPSG:25832</CRS>
+<CRS>EPSG:25833</CRS>
+<CRS>EPSG:25834</CRS>
+<CRS>EPSG:25835</CRS>
+<CRS>EPSG:25836</CRS>
+<CRS>EPSG:25837</CRS>
+<CRS>EPSG:25838</CRS>
+<CRS>EPSG:102100</CRS>
+<EX_GeographicBoundingBox>
+<westBoundLongitude>19.782912</westBoundLongitude>
+<eastBoundLongitude>27.881027</eastBoundLongitude>
+<southBoundLatitude>35.170953</southBoundLatitude>
+<northBoundLatitude>41.253801</northBoundLatitude>
+</EX_GeographicBoundingBox>
+<BoundingBox CRS="EPSG:3034" maxx="1818428.3038972272" maxy="5611899.324552264" minx="1033626.4582782071" miny="4799891.464439919"/>
+<BoundingBox CRS="EPSG:3035" maxx="2194358.7819110793" maxy="5950714.694752146" minx="1403514.9227107256" miny="5141776.821031996"/>
+<BoundingBox CRS="EPSG:3040" maxx="4506008.523911316" maxy="5556369.702276058" minx="3427893.7321125907" miny="4500501.232421699"/>
+<BoundingBox CRS="EPSG:3041" maxx="3927217.630793218" maxy="5278663.870078473" minx="2921117.636274193" miny="4296417.023719931"/>
+<BoundingBox CRS="EPSG:3042" maxx="5054011.920250718" maxy="3354421.950402014" minx="4139343.8391593527" miny="2414257.8831085027"/>
+<BoundingBox CRS="EPSG:3043" maxx="4876828.210212206" maxy="2788626.425402894" minx="4023768.8308070675" miny="1908468.3713173214"/>
+<BoundingBox CRS="EPSG:3044" maxx="4742570.563019538" maxy="2229595.1275732024" minx="3945702.98615014" miny="1404053.146571505"/>
+<BoundingBox CRS="EPSG:3045" maxx="4647735.229935288" maxy="1676275.7733637893" minx="3902491.2553858184" miny="900764.545043522"/>
+<BoundingBox CRS="EPSG:3046" maxx="4589824.299661821" maxy="1127105.8223365932" minx="3892001.416081888" miny="389167.3978709978"/>
+<BoundingBox CRS="EPSG:3047" maxx="4592122.252217778" maxy="580228.7144834654" minx="3892001.415964156" miny="-157786.08124216646"/>
+<BoundingBox CRS="EPSG:3048" maxx="4652052.006125189" maxy="71067.21091153764" minx="3904020.21412124" miny="-707141.3070308995"/>
+<BoundingBox CRS="EPSG:3049" maxx="4749020.169873207" maxy="-432271.5383863753" minx="3949134.9566065734" miny="-1260742.9086582265"/>
+<BoundingBox CRS="EPSG:3050" maxx="4885579.934490423" maxy="-936761.1774784408" minx="4029219.7952343654" miny="-1820131.2706821165"/>
+<BoundingBox CRS="EPSG:3857" maxx="3103701.770846238" maxy="5049849.7066265885" minx="2202223.7383381613" miny="4187137.366734081"/>
+<BoundingBox CRS="EPSG:25830" maxx="3354421.950402014" maxy="5054011.920250718" minx="2414257.8831085027" miny="4139343.8391593527"/>
+<BoundingBox CRS="EPSG:25831" maxx="2788626.425402894" maxy="4876828.210212206" minx="1908468.3713173214" miny="4023768.8308070675"/>
+<BoundingBox CRS="EPSG:25832" maxx="2229595.1275732024" maxy="4742570.563019538" minx="1404053.146571505" miny="3945702.98615014"/>
+<BoundingBox CRS="EPSG:25833" maxx="1676275.7733637893" maxy="4647735.229935288" minx="900764.545043522" miny="3902491.2553858184"/>
+<BoundingBox CRS="EPSG:25834" maxx="1127105.8223365932" maxy="4589824.299661821" minx="389167.3978709978" miny="3892001.416081888"/>
+<BoundingBox CRS="EPSG:25835" maxx="580228.7144834654" maxy="4592122.252217778" minx="-157786.08124216646" miny="3892001.415964156"/>
+<BoundingBox CRS="EPSG:25836" maxx="71067.21091153764" maxy="4652052.006125189" minx="-707141.3070308995" miny="3904020.21412124"/>
+<BoundingBox CRS="EPSG:25837" maxx="-432271.5383863753" maxy="4749020.169873207" minx="-1260742.9086582265" miny="3949134.9566065734"/>
+<BoundingBox CRS="EPSG:25838" maxx="-936761.1774784408" maxy="4885579.934490423" minx="-1820131.2706821165" miny="4029219.7952343654"/>
+<BoundingBox CRS="EPSG:102100" maxx="3103701.770846238" maxy="5049849.7066265885" minx="2202223.7383381613" miny="4187137.366734081"/>
+<BoundingBox CRS="CRS:84" maxx="27.881027" maxy="41.253801" minx="19.782912" miny="35.170953"/>
+<BoundingBox CRS="EPSG:4326" maxx="41.253801" maxy="27.881027" minx="35.170953" miny="19.782912"/>
+<BoundingBox CRS="EPSG:4258" maxx="41.253801" maxy="27.881027" minx="35.170953" miny="19.782912"/>
+<MetadataURL type="ISO19115">
+<Format>text/xml</Format>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://gis.ktimanet.gr/geoportal/rest/document?id=%7B3DE46469-97B1-46D4-A8DB-03D9BA80F523%7D" xlink:type="simple"/>
+</MetadataURL>
+<DataURL>
+<Format>application/zip</Format>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.ktimatologio.gr" xlink:type="simple"/>
+</DataURL>
+<Style>
+<Name>CP.CadastralParcel.ReferencePointOnly</Name>
+<Title>CP.CadastralParcel.ReferencePointOnly</Title>
+<LegendURL height="16" width="16">
+<Format>image/png</Format>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?request=GetLegendGraphic&version=1.3.0&format=image/png&layer=CP.CadastralParcel&style=CP.CadastralParcel.ReferencePointOnly" xlink:type="simple"/>
+</LegendURL>
+</Style>
+<Style>
+<Name>CP.CadastralParcel.BoundariesOnly</Name>
+<Title>CP.CadastralParcel.BoundariesOnly</Title>
+<LegendURL height="16" width="16">
+<Format>image/png</Format>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?request=GetLegendGraphic&version=1.3.0&format=image/png&layer=CP.CadastralParcel&style=CP.CadastralParcel.BoundariesOnly" xlink:type="simple"/>
+</LegendURL>
+</Style>
+<Style>
+<Name>CP.CadastralParcel.LabelOnReferencePoint</Name>
+<Title>CP.CadastralParcel.LabelOnReferencePoint</Title>
+<LegendURL height="16" width="16">
+<Format>image/png</Format>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?request=GetLegendGraphic&version=1.3.0&format=image/png&layer=CP.CadastralParcel&style=CP.CadastralParcel.LabelOnReferencePoint" xlink:type="simple"/>
+</LegendURL>
+</Style>
+<Style>
+<Name>inspire_common:DEFAULT</Name>
+<Title>inspire_common:DEFAULT</Title>
+<LegendURL height="16" width="16">
+<Format>image/png</Format>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?request=GetLegendGraphic&version=1.3.0&format=image/png&layer=CP.CadastralParcel&style=inspire_common:DEFAULT" xlink:type="simple"/>
+</LegendURL>
+</Style>
+<Style>
+<Name>default</Name>
+<Title>ESRI WMS Default</Title>
+<LegendURL height="18" width="18">
+<Format>image/png</Format>
+<OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://gis.ktimanet.gr/inspire/rest/services/cadastralparcels/CadastralParcelWMS/MapServer/exts/InspireView/ENG/service?request=GetLegendGraphic&version=1.3.0&format=image/png&layer=CP.CadastralParcel&style=default" xlink:type="simple"/>
+</LegendURL>
+</Style>
+<MaxScaleDenominator>9449.404762</MaxScaleDenominator>
+</Layer>
+</Layer>
+</Capability>
+</WMS_Capabilities>
